@@ -1,0 +1,213 @@
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~
+$ pwd
+/c/Users/Tursunov_Shokhijakho
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~
+$ cd C:\Users\Tursunov_Shokhijakho\Downloads\homework_coding\code
+bash: cd: C:UsersTursunov_ShokhijakhoDownloadshomework_codingcode: No such file or directory
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~
+$ pwd
+/c/Users/Tursunov_Shokhijakho
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~
+$ cd Downloads
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads
+$ cd Homework
+bash: cd: Homework: No such file or directory
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads
+$ cd homework_coding
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding
+$ cd code
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code
+$ ls -a
+./   Graph.gph    football-managers-workfile_p.csv  my_do_file.do
+../  Graphic.png  my_data_in_stata.dta              my_python_homework.ipynb
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code
+$ git clone https://github.com/shokh884/my_assignment.git
+Cloning into 'my_assignment'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code
+$ git init
+Initialized empty Git repository in C:/Users/Tursunov_Shokhijakho/Downloads/homework_coding/code/.git/
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ ls -a
+./         Graphic.png                       my_do_file.do
+../        football-managers-workfile_p.csv  my_python_homework.ipynb
+.git/      my_assignment/
+Graph.gph  my_data_in_stata.dta
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Graph.gph
+        Graphic.png
+        football-managers-workfile_p.csv
+        my_assignment/
+        my_data_in_stata.dta
+        my_do_file.do
+        my_python_homework.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git commit -m "start notes"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Graph.gph
+        Graphic.png
+        football-managers-workfile_p.csv
+        my_assignment/
+        my_data_in_stata.dta
+        my_do_file.do
+        my_python_homework.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git add .
+warning: adding embedded git repository: my_assignment
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> my_assignment
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached my_assignment
+hint:
+hint: See "git help submodule" for more information.
+warning: in the working copy of 'my_python_homework.ipynb', LF will be replaced by CRLF the next time Git touches it
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Graph.gph
+        new file:   Graphic.png
+        new file:   football-managers-workfile_p.csv
+        new file:   my_assignment
+        new file:   my_data_in_stata.dta
+        new file:   my_do_file.do
+        new file:   my_python_homework.ipynb
+
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git commit -m "starts notes"
+[master (root-commit) 51a2b6d] starts notes
+ Committer: Shokhijakhon Tursunov <Tursunov_Shokhijakho@student.ceu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 16678 insertions(+)
+ create mode 100644 Graph.gph
+ create mode 100644 Graphic.png
+ create mode 100644 football-managers-workfile_p.csv
+ create mode 160000 my_assignment
+ create mode 100644 my_data_in_stata.dta
+ create mode 100644 my_do_file.do
+ create mode 100644 my_python_homework.ipynb
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git log
+commit 51a2b6df99eba5cb72804a3660ee8efa7deedd2c (HEAD -> master)
+Author: Shokhijakhon Tursunov <Tursunov_Shokhijakho@student.ceu.edu>
+Date:   Fri Nov 8 18:35:53 2024 +0100
+
+    starts notes
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git remote add https://github.com/shokh884/my_assignment.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git remote add homework_coding https://github.com/shokh884/my_assignment.git
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git push homework_coding
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream homework_coding master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git push --set-upstream homework_coding master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 231.39 KiB | 3.56 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/shokh884/my_assignment/pull/new/master
+remote:
+To https://github.com/shokh884/my_assignment.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'homework_coding/master'.
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git remote -v
+homework_coding https://github.com/shokh884/my_assignment.git (fetch)
+homework_coding https://github.com/shokh884/my_assignment.git (push)
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$ git push
+Everything up-to-date
+
+Tursunov_Shokhijakho@VirtualLab-304 MINGW64 ~/Downloads/homework_coding/code (master)
+$
